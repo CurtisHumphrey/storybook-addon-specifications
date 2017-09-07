@@ -39,7 +39,6 @@ export const it = function(desc, func) {
   };
 
   const pushWrongResult = (e) => {
-    console.error(`${storyName} - ${desc} : ${e}`);
     results[storyName].wrongResults.push({ spec: desc, message: e.message });
   };
 
